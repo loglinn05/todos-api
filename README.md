@@ -1,4 +1,4 @@
-# Vue 3 [To-Do Application](https://github.com/loglinn05/todos) API
+# Vue 3 [To-Do Application](https://github.com/loglinn05/todos) Laravel API
 
 ## How to start it on a local server (XAMPP)?
 1. Clone the repo into `htdocs` folder.
