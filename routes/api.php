@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\TodoController;
+use \App\Http\Controllers\TodoListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,16 @@ Route::prefix('todos')->group(function () {
         Route::post('/delete', 'delete');
         Route::post('/mark-as-done', 'markAsDone');
         Route::post('/mark-as-undone', 'markAsUndone');
+        Route::post('/edit', 'edit');
+    });
+});
+
+Route::prefix('todo-lists')->group(function () {
+    Route::controller(TodoListController::class)->group(function () {
+        Route::get('/', 'index');
+        Route::post('/create', 'create');
+        Route::post('/delete', 'delete');
+        Route::post('/mark-as-active', 'markAsActive');
         Route::post('/edit', 'edit');
     });
 });
