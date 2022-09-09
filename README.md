@@ -6,8 +6,9 @@
 2. Open your command prompt and navigate to the project root.
 3. Run `composer install` to install the project dependencies.
 4. Run `php artisan migrate` to run the migrations and create all the needed tables.
-5. Run `php artisan serve`.
-6. Run the [app](https://github.com/loglinn05/todos) itself. Following the link, you will find the instruction for doing so.
+5. Create `.env` file and copy `.env.example` content to it.
+6. Run `php artisan serve`.
+7. Run the [app](https://github.com/loglinn05/todos) itself. Following the link, you will find the instruction for doing so.
 
 ## Contributing
 Go [here](https://github.com/loglinn05/todos#contributing).

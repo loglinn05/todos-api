@@ -9,4 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class Todo extends Model
 {
     use HasFactory;
+
+    public function todoList()
+    {
+        return $this->belongsTo(TodoList::class);
+    }
 }
